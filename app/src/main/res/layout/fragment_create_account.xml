@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/createAccountTF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Create Account"
+        android:textSize="24sp" />
+
+    <EditText
+android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+android:autofillHints="name"
+        android:hint="Enter Your Name"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:padding="8dp"
+        android:textSize="18sp"
+android:inputType="text"
+        android:layout_below="@+id/createAccountTF"
+        />
+
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@+id/userNameEditText"/>
+    <EditText
+        android:id="@+id/passwordEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/edittext_background"
+        android:layout_below="@+id/emailEditTxt"
+        />
+
+    <EditText
+        android:id="@+id/passwordReEnterEdtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:layout_below="@+id/passwordEdtTxt"
+        />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordReEnterEdtTxt"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="64dp"
+        android:backgroundTint="#56E1B0"
+        android:text="Create Account" />
+
+
+    <ProgressBar
+        android:id="@+id/createUserProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="8dp"
+        />
+</RelativeLayout>
