@@ -27,7 +27,8 @@ interface NoteDao {
 
 
     @Query("SELECT * FROM LocalNote WHERE connected = 0")
-    suspend fun getAllLocalNotes(): List<LocalNote>
+    fun getAllLocalNotes(): Flow<List<LocalNote>>
+
 
 
     @Query("SELECT * FROM LocalNote WHERE locallyDeleted = 1")
